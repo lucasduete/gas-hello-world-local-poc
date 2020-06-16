@@ -1,7 +1,9 @@
 function execRemoteScript() {
-    const remote_script_url = "https://gist.githubusercontent.com/lucasduete/c4c59dc0fe300ca1e9b2456bc75253b8/raw/59a26b19a84e3fcd798e21d56b22162cd6184127/poc%2520-%2520remote%2520script";
+    const remote_script_url = "https://gist.githubusercontent.com/lucasduete/c4c59dc0fe300ca1e9b2456bc75253b8/raw/8d6cc29dd335635bbeb725388d34ef542ad78cb3/poc%2520-%2520remote%2520script";
 
     const remote_script = UrlFetchApp.fetch(remote_script_url).getContentText();
 
-    eval(remote_script);
+    const remote_function = eval(remote_script);
+    
+    remote_function();
 }
