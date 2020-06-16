@@ -1,4 +1,4 @@
-# Proof of Concept that use local enviroment to develop a Google Apps Script
+# gas-hello-world-local-poc
 
 Proof of Concept that use local enviroment to develop a Google Apps Script (GAS). This PoC use:
 
